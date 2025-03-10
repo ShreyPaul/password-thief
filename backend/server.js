@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 
 app.use(cors());
-app.use(express.static('frontend/build'));
+app.use(express.static('temp/build'));
 
 app.get('/api/policies', (req, res) => {
   res.json({
